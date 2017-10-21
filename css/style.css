@@ -120,14 +120,6 @@ html, body{
 	width: 100vw;
 }
 
-#projectsCarousel{
-	max-width: 100vw;
-}
-
-#projectsCarousel img{
-	max-width: 100vw;
-}
-
 @media screen and (max-width: 768px) {
 	.carousel-inner{
 		height: 400px;
