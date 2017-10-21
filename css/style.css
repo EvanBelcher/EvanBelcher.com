@@ -137,3 +137,7 @@ html, body{
 		max-height: 400px;
 	}
 }
+
+.card:nth-child(even){
+	background: red;
+}
