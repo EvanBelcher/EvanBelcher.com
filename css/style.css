@@ -120,6 +120,8 @@ ul.social-buttons li a{
 .navbar{
 	background: rgba(0,0,0,0.3);
 	border-bottom: 1px solid black;
+	white-space: nowrap;
+	font-size: 0.97em;
 }
 
 .nav-link.active{
@@ -231,4 +233,41 @@ footer{
 
 #contact, #workExperience{
 	margin-top: -1px;
+}
+
+#downarrow{
+	position: absolute;
+	top: 85vh;
+}
+
+#downarrow, #uparrow{
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+}
+
+#downarrow a, #uparrow a{
+	color: white !important;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+#downarrow a:hover, #uparrow a:hover{
+	font-size: 3.2em;
+}
+
+.js section .container{
+	opacity: 0;
+}
+
+footer li a:hover{
+	background: #323232;
+	border: 1px solid #999999;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 437px) {
+	#header-center{
+		padding-top: 20vh;
+	}
 }
