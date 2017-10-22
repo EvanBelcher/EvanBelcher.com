@@ -23,21 +23,23 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://evanbelcher.com">
 	<meta property="og:description" content="Software Engineer and Web Designer pursuing a B.S. in Computer Science at George Mason University">
-	<meta property="og:image" content="img/coding-bg.jpg">
+	<meta property="og:image" content="http://mason.gmu.edu/~ebelche2//img/coding-bg.jpg">
 	<meta property="og:image:type" content="image/jpeg">
 	<meta property="og:image:width" content="4004">
 	<meta property="og:image:height" content="3509">
-	<meta property="og:image" content="img/evanWebsite-screenshot.png">
+	<meta property="og:image" content="http://mason.gmu.edu/~ebelche2//img/evanWebsite-screenshot.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1898">
 	<meta property="og:image:height" content="926">
+
+	<meta property="fb:app_id" content="539430729735046">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:creator" content="@evanbelcher3">
 	<meta name="twitter:description" content="Software Engineer and Web Designer pursuing a B.S. in Computer Science at George Mason University">
 	<meta name="twitter:title" content="Evan Belcher">
-	<meta name="twitter:image" content="img/coding-bg.jpg">
+	<meta name="twitter:image" content="http://mason.gmu.edu/~ebelche2//img/coding-bg.jpg">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -85,6 +87,24 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target="#mainNav">
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '539430729735046',
+				xfbml: true,
+				version: 'v2.10'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) { return; }
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
