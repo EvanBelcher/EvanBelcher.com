@@ -280,7 +280,7 @@
 			<div class="row" style="margin-top: 10px;">
 				<div class="col-lg-8 mx-auto">
 					<div class="text-center">
-						<a class="btn btn-outline-primary" href="#" target="_blank" download>Take a souvenier!</a>
+						<a class="btn btn-outline-primary" href="docs/Evan Belcher Resume.pdf" target="_blank" download>Take a souvenir!</a>
 					</div>
 				</div>
 			</div>
@@ -618,15 +618,20 @@
 			var topofTitle = $(".page-header").offset().top; //gets offset of header
 			var navbarHeight = $(".navbar").outerHeight(); //gets height of header
 
-			$(window).scroll(function () {
+			$(window).scroll(function(){
+				correctNavbar();
+			});
+			correctNavbar();
+
+			function correctNavbar() {
 				console.log($(window).scrollTop());
-				if ($(window).scrollTop() + navbarHeight> topofTitle) {
+				if ($(window).scrollTop() + navbarHeight > topofTitle) {
 					$(".navbar").attr('style', 'background: url(../img/stressed_linen.png);');
 				}
 				else {
 					$(".navbar").attr('style', 'background: rgba(0,0,0,0.3);');
 				}
-			});
+			}
 		});
 	</script>
 </body>
