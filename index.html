@@ -28,7 +28,7 @@
 <body id="page-top" data-spy="scroll" data-target="#mainNav">
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top">Evan Belcher</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -53,6 +53,9 @@
 						<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
 					</li>
 				</ul>
@@ -72,7 +75,7 @@
 		</div>
 	</div>
 
-	<section id="about">
+	<section id="about" class="bg-light">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
@@ -167,11 +170,11 @@
 		</div>
 	</div>
 
-	<section id="bg-devfest" class="bg-img" style="height: 500px; background: url('img/devfestdc_winners_crop_logo.jpg'); background-size: cover; background-attachment: fixed; background-position: 25% 50%;">
+	<section id="bg-devfest" class="bg-img" style="height: 500px; background: url('img/devfestdc_winners_crop_logo-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 25% 50%;">
 		<div class="img-overlay"></div>
 	</section>
 
-	<section id="industryExperience" class="bg-light">
+	<section id="industryExperience" class="bg-dark">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
@@ -179,84 +182,94 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div id="ie-devfestdc" class="card col-lg-4">
-					<img class="card-img-top" src="img/devfest-transparent.png" alt="DevFest DC">
-					<div class="card-block">
-						<h4>First Place Hackathon Winner
-							<br>
-							<small>DevFest DC
-								<br>10/9/17</small>
-						</h4>
-						<ul>
-							<li>Attended sessions on machine learning and Google Assistant</li>
-							<li>Formed and led a team with familiar and unfamiliar colleagues</li>
-							<li>Won first place at the Google-sponsored Firebase hackathon with
-								<a href="#projects" data-target="#projectsCarousel" data-slide-to="8">Chord</a>
-							</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="ie-devfestdc" class="card bg-light">
+						<img class="card-img-top" src="img/devfest-transparent.png" alt="DevFest DC">
+						<div class="card-block">
+							<h4>First Place Hackathon Winner
+								<br>
+								<small>DevFest DC
+									<br>10/9/17</small>
+							</h4>
+							<ul>
+								<li>Attended sessions on machine learning and Google Assistant</li>
+								<li>Formed and led a team with familiar and unfamiliar colleagues</li>
+								<li>Won first place at the Google-sponsored Firebase hackathon with
+									<a href="#projects" carouselIndex="8">Chord</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div id="ie-caponesoftware" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/capitalone-logo.png" alt="Capital One Software Engineering Summit">
-					<div class="card-block">
-						<h4>Software Engineering Summit
-							<br>
-							<small>Capital One
-								<br>1/8/17 - 1/13/17</small>
-						</h4>
-						<ul>
-							<li>Attended numerous sessions on a variety of topics including AWS, Android dev, iOS dev, Git, Sketch, Api.ai, etc.</li>
-							<li>Competed in a 24-hour finance-based hackathon with new colleagues and created
-								<a href="#projects" data-target="#projectsCarousel" data-slide-to="3">SocialSave</a>
-							</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="ie-caponesoftware" class="card bg-light">
+						<img class="card-img-top" src="img/capitalone-logo.png" alt="Capital One Software Engineering Summit">
+						<div class="card-block">
+							<h4>Software Engineering Summit
+								<br>
+								<small>Capital One
+									<br>1/8/17 - 1/13/17</small>
+							</h4>
+							<ul>
+								<li>Attended numerous sessions on a variety of topics including AWS, Android dev, iOS dev, Git, Sketch, Api.ai, etc.</li>
+								<li>Competed in a 24-hour finance-based hackathon with new colleagues and created
+									<a href="#projects" carouselIndex="3">SocialSave</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div id="ie-metrostarshadow" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/metrostar-logo.jpg" alt="MetroStar">
-					<div class="card-block">
-						<h4>Job Shadow
-							<br>
-							<small>MetroStar Systems
-								<br>11/4/16</small>
-						</h4>
-						<ul>
-							<li>Shadowed and spoke to numerous MetroStar employees about their work</li>
-							<li>Accepted through "Take a Patriot to Work Day" program</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="ie-metrostarshadow" class="card bg-light">
+						<img class="card-img-top" src="img/metrostar-logo.png" alt="MetroStar">
+						<div class="card-block">
+							<h4>Job Shadow
+								<br>
+								<small>MetroStar Systems
+									<br>11/4/16</small>
+							</h4>
+							<ul>
+								<li>Shadowed and spoke to numerous MetroStar employees about their work</li>
+								<li>Accepted through "Take a Patriot to Work Day" program</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div id="ie-openhatch" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/openhatch-logo.png" alt="OpenHatch">
-					<div class="card-block">
-						<h4>Open-Source Event
-							<br>
-							<small>OpenHatch
-								<br>9/24/16</small>
-						</h4>
-						<ul>
-							<li>Attended sessions on git and open-source</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="ie-openhatch" class="card bg-light">
+						<img class="card-img-top" src="img/openhatch-logo.png" alt="OpenHatch">
+						<div class="card-block">
+							<h4>Open-Source Event
+								<br>
+								<small>OpenHatch
+									<br>9/24/16</small>
+							</h4>
+							<ul>
+								<li>Attended sessions on git and open-source</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div id="ie-jamtech" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/jamtech-logo.jpeg" alt="Jamtech">
-					<div class="card-block">
-						<h4>Game Design Hackathon
-							<br>
-							<small>Jamtech
-								<br>2014</small>
-						</h4>
-						<ul>
-							<li>Created a game in Unity</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="ie-jamtech" class="card bg-light">
+						<img class="card-img-top" src="img/jamtech-logo.png" alt="Jamtech">
+						<div class="card-block">
+							<h4>Game Design Hackathon
+								<br>
+								<small>Jamtech
+									<br>2014</small>
+							</h4>
+							<ul>
+								<li>Created a game in Unity</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="resume" class="bg-img" style="height: 300px; background: url('img/dark_fish_skin.png'); padding-top: 40px;">
+	<section id="resume" class="bg-img" style="height: 300px; background: url('img/stressed_linen.png'); padding-top: 40px;">
 		<div class="container" style="height:100%;">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
@@ -274,7 +287,7 @@
 		</div>
 	</section>
 
-	<section id="workExperience" class="bg-light" style="z-index:4;">
+	<section id="workExperience" class="bg-dark" style="z-index:4;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
@@ -282,44 +295,48 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div id="we-kaplan" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/Kaplan_logo.png" alt="Kaplan">
-					<div class="card-block">
-						<h4>Pre-College Instructor
-							<br>
-							<small>Kaplan Test Prep
-								<br>6/2017-Current</small>
-						</h4>
-						<ul>
-							<li>Help high-school students prepare for the SAT and PSAT</li>
-							<li>Provide individual attention to equip each student for test day</li>
-							<li>Prepare interactive and engaging lessons</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="we-kaplan" class="card bg-light">
+						<img class="card-img-top" src="img/kaplan-logo.png" alt="Kaplan">
+						<div class="card-block">
+							<h4>Pre-College Instructor
+								<br>
+								<small>Kaplan Test Prep
+									<br>6/2017-Current</small>
+							</h4>
+							<ul>
+								<li>Help high-school students prepare for the SAT and PSAT</li>
+								<li>Provide individual attention to equip each student for test day</li>
+								<li>Prepare interactive and engaging lessons</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div id="we-gmuuta" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/gmu-logo.png" alt="Kaplan">
-					<div class="card-block">
-						<h4>Computer Science Undergraduate Teaching Assistant
-							<br>
-							<small>George Mason University
-								<br>1/2017-5/2017</small>
-						</h4>
-						<ul>
-							<li>Attend Object-Oriented Programming lab sections</li>
-							<li>Answer student questions in-person and online</li>
-						</ul>
+				<div class="col-lg-4">
+					<div id="we-gmuuta" class="card bg-light">
+						<img class="card-img-top" src="img/gmu-logo.png" alt="Kaplan">
+						<div class="card-block">
+							<h4>Computer Science Undergraduate Teaching Assistant
+								<br>
+								<small>George Mason University
+									<br>1/2017-5/2017</small>
+							</h4>
+							<ul>
+								<li>Attend Object-Oriented Programming lab sections</li>
+								<li>Answer student questions in-person and online</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="bg-coding" class="bg-img" style="height: 500px; background: url('img/coding-bg-crop.jpg'); background-size: cover; background-attachment: fixed; background-position: 60% 0%;">
+	<section id="bg-coding" class="bg-img" style="height: 500px; background: url('img/coding-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 60% 0%;">
 		<div class="img-overlay"></div>
 	</section>
 
-	<section id="projects" class="bg-light">
+	<section id="projects" class="bg-dark">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
@@ -440,7 +457,7 @@
 		<div class="img-overlay"></div>
 	</section>
 
-	<section id="activities">
+	<section id="activities" class="bg-dark">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mx-auto text-center">
@@ -448,58 +465,62 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div id="act-msn" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/msn-logo.jpg" alt="Mason Some Noise">
-					<div class="card-block">
-						<h4>Mason Some Noise
-							<br>
-							<small>GMU A Cappella Group
-								<br>9/2016-Current</small>
-						</h4>
-						Roles:
-						<ul>
-							<li>Music Director</li>
+				<div class="col-lg-4">
+					<div id="act-msn" class="card bg-light">
+						<img class="card-img-top" src="img/msn-logo.png" alt="Mason Some Noise">
+						<div class="card-block">
+							<h4>Mason Some Noise
+								<br>
+								<small>GMU A Cappella Group
+									<br>9/2016-Current</small>
+							</h4>
+							Roles:
 							<ul>
-								<li>Arrange and Organize Music</li>
-								<li>Lead Rehearsals</li>
+								<li>Music Director</li>
+								<ul>
+									<li>Arrange and Organize Music</li>
+									<li>Lead Rehearsals</li>
+								</ul>
+								<li>Secretary</li>
+								<li>
+									<a href="#projects" carouselIndex="1">Webmaster</a>
+								</li>
+								<li>Vocal Percussion Section Leader</li>
+								<li>Beatboxer and Bass Singer</li>
 							</ul>
-							<li>Secretary</li>
-							<li>Webmaster</li>
-							<li>Vocal Percussion Section Leader</li>
-							<li>Beatboxer and Bass Singer</li>
-						</ul>
+						</div>
 					</div>
 				</div>
-				<div id="act-wind" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/gmu-logo.png" alt="GMU Wind Symphony">
-					<div class="card-block">
-						<h4>GMU Wind Symphony
-							<br>
-							<small>9/2016-Current</small>
-						</h4>
-						3rd Chair Clarinet Player
+				<div class="col-lg-4">
+					<div id="act-wind" class="card bg-light">
+						<img class="card-img-top" src="img/gmu-logo.png" alt="GMU Wind Symphony">
+						<div class="card-block">
+							<h4>GMU Wind Symphony
+								<br>
+								<small>9/2016-Current</small>
+							</h4>
+							3rd Chair Clarinet Player
+						</div>
 					</div>
 				</div>
-				<div id="act-greenmachine" class="card col-lg-4" style="width: 20rem;">
-					<img class="card-img-top" src="img/gmu-logo.png" alt="Green Machine">
-					<div class="card-block">
-						<h4>Green Machine
-							<br>
-							<small>GMU Pep Band
-								<br>9/2016-Current</small>
-						</h4>
-						Clarinet Player and Singer
+				<div class="col-lg-4">
+					<div id="act-greenmachine" class="card bg-light">
+						<img class="card-img-top" src="img/gmu-logo.png" alt="Green Machine">
+						<div class="card-block">
+							<h4>Green Machine
+								<br>
+								<small>GMU Pep Band
+									<br>9/2016-Current</small>
+							</h4>
+							Clarinet Player and Singer
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="bg-coding" class="bg-img" style="height: 100vh; background: url('img/about.jpg'); background-size: cover; background-attachment: fixed;background-position: 70% 20%;">
-		<div class="img-overlay"></div>
-	</section>
-
-	<section id="contact">
+	<section id="contact" class="bg-light">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 mx-auto text-center">
@@ -515,7 +536,7 @@
 	</section>
 
 	<!-- Footer -->
-	<footer class="py-3 bg-dark">
+	<footer class="py-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -587,6 +608,25 @@
 				}
 			}
 			$('#projectsModal').modal();
+		});
+
+		$('a[carouselIndex]').click(function () {
+			$('#projectsCarousel').carousel(parseInt($(this).attr('carouselIndex')));
+		});
+
+		$(function () {
+			var topofTitle = $(".page-header").offset().top; //gets offset of header
+			var navbarHeight = $(".navbar").outerHeight(); //gets height of header
+
+			$(window).scroll(function () {
+				console.log($(window).scrollTop());
+				if ($(window).scrollTop() + navbarHeight> topofTitle) {
+					$(".navbar").attr('style', 'background: url(../img/stressed_linen.png);');
+				}
+				else {
+					$(".navbar").attr('style', 'background: rgba(0,0,0,0.3);');
+				}
+			});
 		});
 	</script>
 </body>

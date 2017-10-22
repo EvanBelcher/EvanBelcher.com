@@ -1,4 +1,6 @@
 #header{
+	position: relative;
+	top: -65px;
 	height: 100vh;
 }
 
@@ -11,6 +13,13 @@
 	/* background: linear-gradient(#212529, white); */
 	background: url(../img/stressed_linen.png);
 	/* background-attachment: fixed; */
+}
+
+#header{
+	background-image: url(../img/header-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
 }
 
 #header-center h1{
@@ -27,6 +36,10 @@ section:not(.bg-img){
 	padding-bottom: 30px;
 }
 
+section:not(#resume):not(#contact){
+	min-height: 100vh;
+}
+
 body{
 	position: relative;
 	padding-top: 65px;
@@ -35,8 +48,9 @@ body{
 .card{
 	margin-top: 30px;
 	margin-bottom: 30px;
-	/* margin-left: 10px;
-	margin-right: 10px; */
+	border-radius: 0;
+	min-height: 90%;
+	padding: 0 10px;
 }
 
 .card img{
@@ -93,18 +107,25 @@ ul.social-buttons li a{
 	background-attachment: fixed;
 }
 
+/* h2{
+	font-family: "Segoe UI" !important;
+	font-weight: 300;
+} */
+
 /* *{
 	font-family: "Segoe UI" !important;
 	font-weight: 300 !important;
 } */
 
 .navbar{
-	background: url(../img/stressed_linen.png);
+	background: rgba(0,0,0,0.3);
 	border-bottom: 1px solid black;
 }
 
 .nav-link.active{
-	background: rgba(255,255,255, 0.05);
+	background: #323232;
+	border: 1px solid #999999;
+	border-radius: 5px;
 }
 
 a.btn{
@@ -128,8 +149,86 @@ html, body{
 	.carousel-item img{
 		max-height: 400px;
 	}
+
+	section:not(#resume):not(#contact){
+		min-height: 50vh;
+	}
 }
 
 .card:nth-child(even){
 	background: red;
+}
+
+.bg-light{
+	background: #fefffa !important;
+	color: #212529;
+}
+
+.bg-dark{
+	background: #1f3750 !important;
+	color: white;
+}
+
+.bg-dark h2{
+	color: white;
+}
+
+/* a{
+	color: #eb8255;
+}
+
+a:hover{
+	color: #eb8255;
+}
+
+.btn-outline-primary{
+	border-color: #00c850;
+	color: #00c850;
+}
+
+.btn-outline-primary:hover{
+	background-color: #00c850;
+} */
+
+a{
+	color: #00c850;
+}
+
+a:hover{
+	color: #00c850;
+}
+
+.btn-primary{
+	background-color: #00c850;
+}
+
+.btn-outline-primary{
+	border-color: #00c850;
+	color: #00c850;
+}
+
+.btn-outline-primary:hover{
+	background-color:#00c850;
+}
+
+.btn-secondary{
+	background-color: #de7548;
+}
+
+.btn-outline-secondary{
+	border-color: #de7548;
+	color: #de7548;
+}
+
+.btn-outline-secondary:hover{
+	background-color: #de7548;
+}
+
+footer{
+	background: url(../img/stressed_linen.png);
+	color: white;
+}
+
+#contact, #workExperience{
+	margin-top: -1px;
 }
