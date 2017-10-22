@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head prefix="og: http://ogp.me/ns#">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108462550-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-108462550-1');
+	</script>
+
+	<!-- Default HTML tags -->
 	<title>Evan Belcher | Software Developer</title>
 	<meta charset="UTF-8">
-	
+	<meta name="description" content="Software Engineer and Web Designer pursuing a B.S. in Computer Science at George Mason University">
+	<meta name="keywords" content="evan belcher, evan, belcher, ebminor3, george mason university, george mason, gmu, student, computer science, computer, science, software engineer, software, engineer, engineering, designer, web designer, web design, design, web, website, developer, internship, intern, job, data analysis, data, analysis, big data, music, musician">
+	<meta name="author" content="Evan Belcher">
+
+	<!-- Facebook / Open Graph -->
+	<meta property="og:title" content="Evan Belcher">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://evanbelcher.com">
+	<meta property="og:description" content="Software Engineer and Web Designer pursuing a B.S. in Computer Science at George Mason University">
+	<meta property="og:image" content="img/coding-bg.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="4004">
+	<meta property="og:image:height" content="3509">
+	<meta property="og:image" content="img/evanWebsite-screenshot.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1898">
+	<meta property="og:image:height" content="926">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:creator" content="@evanbelcher3">
+	<meta name="twitter:description" content="Software Engineer and Web Designer pursuing a B.S. in Computer Science at George Mason University">
+	<meta name="twitter:title" content="Evan Belcher">
+	<meta name="twitter:image" content="img/coding-bg.jpg">
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -694,8 +728,8 @@
 				}
 			});
 
-			$('.navbar a').click(function(){
-				if(toggler){
+			$('.navbar a').click(function () {
+				if (toggler) {
 					$('.navbar-toggler').click();
 				}
 			});
@@ -703,23 +737,23 @@
 			$('#header-center').addClass('animated fadeIn');
 			$('#downarrow').addClass('animated fadeIn');
 
-			$('section .container').waypoint(function(direction){
+			$('section .container').waypoint(function (direction) {
 				// $(this.element.id).addClass('animated zoomIn');
 				// console.log(this.element.parentNode);
 				$(`#${this.element.parentNode.id} .container`).css('opacity', 1);
 				$(`#${this.element.parentNode.id} .container`).addClass('animated zoomIn');
-			},{
-				offset: '75%'
-			});
+			}, {
+					offset: '75%'
+				});
 
-			$('#resumebutton').waypoint(function(direction){
+			$('#resumebutton').waypoint(function (direction) {
 				$('#resumebutton').addClass('animated infinite pulse');
-			},{
-				offset: '75%'
-			});
+			}, {
+					offset: '75%'
+				});
 		});
 
-		$('a[href^="#"]').bind('click', function(){
+		$('a[href^="#"]').bind('click', function () {
 			let anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
