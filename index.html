@@ -83,6 +83,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4="
 	 crossorigin="anonymous"></script>
 
+	<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -169,17 +171,17 @@
 						<a href="https://catalog.gmu.edu/colleges-schools/engineering/statistics/data-analysis-minor/#text" target="_blank">Data Analysis</a>. I am particularly interested in software development, back end, and data science. While I'm still
 						in school, I'm looking for summer internships.</p>
 					<div class="text-center">
-						<button class="btn btn-outline-primary" type="button" data-toggle="modal" data-target="#coursesModal">
+						<button class="btn btn-outline-primary" type="button" data-toggle="modal" data-target="#coursesModal" style="margin-top: 5px;">
 							<span>See relevant coursework</span>
 						</button>
-						<a class="btn btn-outline-secondary" href="docs/Evan Belcher Unofficial Transcript Fall 2017.pdf" target="_blank" download>
+						<a class="btn btn-outline-secondary" href="docs/Evan Belcher Unofficial Transcript Fall 2017.pdf" target="_blank" download style="margin-top: 5px;">
 							<span>Download unofficial transcript</span>
 						</a>
 					</div>
 					<h4>
 						<br>Strengths: </h4>
 					<ul>
-
+						<li><script>document.write(new Date().getFullYear() - 2013);</script> years of applied programming experience</li>
 						<li>Experienced with Java, JavaScript, TypeScript, R, HTML5, CSS3, PHP, C#, and more</li>
 						<li>Familiar with Firebase technologies (database, storage, hosting, etc.) and Amazon DynamoDB</li>
 						<li>Fast and attentive learner</li>
@@ -253,7 +255,7 @@
 		</div>
 	</div>
 
-	<section id="bg-devfest" class="bg-img" style="height: 500px; background: url('img/devfestdc_winners_crop_logo-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 25% 50%;">
+	<section id="bg-devfest" class="bg-img" style="height: 500px; background: #27252c; background: url('img/devfestdc_winners_crop_logo-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 25% 50%;">
 		<div class="img-overlay"></div>
 	</section>
 
@@ -352,7 +354,7 @@
 		</div>
 	</section>
 
-	<section id="resume" class="bg-img" style="height: 300px; background: url('img/stressed_linen.png'); padding-top: 40px;">
+	<section id="resume" class="bg-img" style="height: 300px; background: #27252c;background: url('img/stressed_linen.png'); padding-top: 40px;">
 		<div class="container" style="height:100%;">
 			<div class="row">
 				<div class="col-lg-8 mx-auto">
@@ -415,7 +417,7 @@
 		</div>
 	</section>
 
-	<section id="bg-coding" class="bg-img" style="height: 500px; background: url('img/coding-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 60% 0%;">
+	<section id="bg-coding" class="bg-img" style="height: 500px; background: #27252c;background: url('img/coding-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 60% 0%;">
 		<div class="img-overlay"></div>
 	</section>
 
@@ -426,7 +428,7 @@
 					<h2 class="text-center">Projects</h2>
 				</div>
 			</div>
-			<div class="row justify-content-center">
+			<div class="row justify-content-center" style="padding-top: 30px;">
 				<div id="projectsCarousel" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
@@ -536,7 +538,7 @@
 		</div>
 	</div>
 
-	<section id="bg-activies" class="bg-img" style="height: 500px; background: url('img/msn-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 85% 60%;">
+	<section id="bg-activies" class="bg-img" style="height: 500px; background: #27252c; background: url('img/msn-bg.jpg'); background-size: cover; background-attachment: fixed; background-position: 85% 60%;">
 		<div class="img-overlay"></div>
 	</section>
 
@@ -623,7 +625,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<!-- <h3>On the web at</h3> -->
 					<ul class="list-inline social-buttons animated fadeIn">
 						<!-- LinkedIn Button -->
 						<li class="list-inline-item">
@@ -758,35 +759,35 @@
 			$('#downarrow').addClass('animated fadeIn');
 
 			$('section .container').waypoint(function (direction) {
-				// $(this.element.id).addClass('animated zoomIn');
-				// console.log(this.element.parentNode);
 				$(`#${this.element.parentNode.id} .container`).css('opacity', 1);
 				$(`#${this.element.parentNode.id} .container`).addClass('animated zoomIn');
 			}, {
 					offset: '95%'
-			});
+				});
 
 			$('#resumebutton').waypoint(function (direction) {
 				$('#resumebutton').addClass('animated infinite pulse');
 			}, {
 					offset: '75%'
-			});
+				});
 
-			$('.card').waypoint(function(direction){
+			$('.card').waypoint(function (direction) {
 				$(`#${this.element.id}`).css('opacity', 1);
 				$(`#${this.element.id}`).addClass('animated fadeInLeft');
 			}, {
-				offset: '75%'
-			});
+					offset: '75%'
+				});
 		});
 
 		$('a[href^="#"]').bind('click', function () {
 			let anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top
-			}, 1500, 'easeInOutExpo');
-			event.preventDefault();
-			window.location.hash = anchor.attr('href');
+			if (anchor.attr('href') != '#projectsCarousel') {
+				$('html, body').stop().animate({
+					scrollTop: $(anchor.attr('href')).offset().top
+				}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+				window.location.hash = anchor.attr('href');
+			}
 		});
 	</script>
 </body>
