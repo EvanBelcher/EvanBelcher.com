@@ -237,7 +237,7 @@ footer{
 
 #downarrow{
 	position: absolute;
-	top: 85vh;
+	top: 80vh;
 }
 
 #downarrow, #uparrow{
@@ -256,7 +256,11 @@ footer{
 	font-size: 3.2em;
 }
 
-.js section .container{
+.js.cssanimations section .container{
+	opacity: 0;
+}
+
+.js.cssanimations .card{
 	opacity: 0;
 }
 
