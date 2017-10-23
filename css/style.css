@@ -1,14 +1,15 @@
+/* Stupid fixes */
+html, body{
+	overflow-x: hidden;
+}
+
 /* Header */
 #header{
 	position: relative;
 	top: -65px;
 	height: 100vh;
-	background: #27252c;
-	background: url(../img/stressed_linen.png);
-		background-image: url(../img/header-bg.png);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
+	background: #27252c url(../img/header-bg.png) center center/cover;
+	background: #27252c url(../img/header-bg.png) center center/cover fixed;
 	color: white;
 }
 
@@ -45,7 +46,6 @@ section:not(#resume):not(#contact){
 
 /* Carousel */
 .carousel-control-prev span, .carousel-control-next span{
-	background: #27252c;
 	padding: 20px;
 	padding-left: 50px;
 	border-radius: 20%;
@@ -80,8 +80,7 @@ ul.social-buttons li a{
 }
 
 footer{
-	background: #27252c;
-	background: url(../img/stressed_linen.png);
+	background: #27252c url(../img/stressed_linen.png);
 	color: white;
 }
 
@@ -106,41 +105,32 @@ footer li a:hover{
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
+	background-attachment: scroll;
 	background-attachment: fixed;
 }
 
 #bg-devfest{
 	height: 500px;
-	background: #27252c;
-	background: url('../img/devfestdc_winners_crop_logo-bg.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: 25% 50%;
+	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover;
+	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover fixed;
 }
 
 #resume{
 	height: 300px;
-	background: #27252c;
-	background: url('../img/stressed_linen.png');
+	background: #27252c url('../img/stressed_linen.png');
 	padding-top: 40px;
 }
 
 #bg-coding{
 	height: 500px;
-	background: #27252c;
-	background: url('../img/coding-bg.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: 60% 0%;
+	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover;
+	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover fixed;
 }
 
 #bg-activities{
 	height: 500px;
-	background: #27252c;
-	background: url('../img/msn-bg.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: 85% 60%;
+	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover;
+	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover fixed;
 }
 
 /* Navbar */
@@ -295,9 +285,4 @@ h4 small{
 
 button{
 	font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
-
-/* Stupid fixes */
-html, body{
-	overflow-x: hidden;
 }
