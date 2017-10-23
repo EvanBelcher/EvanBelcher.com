@@ -282,12 +282,20 @@ a:hover{
 }
 
 /* Animations */
-.js.cssanimations section .container{
+.cssanimations section .container{
 	opacity: 0;
 }
 
-.js.cssanimations .card{
+.cssanimations .no-js section .container{
+	opacity: 1;
+}
+
+.cssanimations .card{
 	opacity: 0;
+}
+
+.cssanimations .no-js .card{
+	opacity: 1;
 }
 
 /* Fonts */

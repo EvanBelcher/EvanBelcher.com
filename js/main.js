@@ -30,6 +30,8 @@ $('.carousel-item').click(function () {
 
 $(function () {
 
+	$('body').removeClass('no-js');
+
 	//Start projects carousel on page load
 	$('#projectsCarousel').carousel();
 
