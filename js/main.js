@@ -52,20 +52,25 @@ $(function () {
 		correctNavbar();
 		fixToggler();
 	});
-	correctNavbar();
+	correctNavbar(true);
 
+	var previousScroll = $(window).scrollTop();
 
-	function correctNavbar() {
-		if ($(window).scrollTop() + navbarHeight > topofTitle) {
-			$(".navbar").css('background', 'url(../img/stressed_linen.png)');
-			$('#page-title').css('opacity', 1);
-			$('#page-title').addClass('animated fadeIn');
+	//Much of this is a fix for navbar flickering on background change due to scrollTop glitch
+	function correctNavbar(ignore) {
+		if (ignore || Math.abs(previousScroll - $(window).scrollTop()) < 100) {
+			if ($(window).scrollTop() + navbarHeight > topofTitle) {
+				$(".navbar").css('background', 'url(../img/stressed_linen.png)');
+				$('#page-title').css('opacity', 1);
+				$('#page-title').addClass('animated fadeIn');
+			}
+			else {
+				$(".navbar").css('background', 'rgba(0,0,0,0.3)');
+				$('#page-title').css('opacity', 0);
+				$('#page-title').removeClass('animated fadeIn');
+			}
 		}
-		else {
-			$(".navbar").css('background', 'rgba(0,0,0,0.3)');
-			$('#page-title').css('opacity', 0);
-			$('#page-title').removeClass('animated fadeIn');
-		}
+		previousScroll = $(window).scrollTop();
 
 		let arrowOpacity = 1 - ($(window).scrollTop() / topofArrow);
 		if (arrowOpacity < 0)
@@ -80,9 +85,11 @@ $(function () {
 
 	//Toggler background and close on click
 	var toggler = false;
+	var toggleAble = false;
 
 	$('.navbar-toggler').click(function () {
 		toggler = !toggler;
+		toggleAble = true;
 		fixToggler();
 	});
 
@@ -90,8 +97,10 @@ $(function () {
 		if (toggler) {
 			$('.navbar').attr('style', 'background: url(../img/stressed_linen.png) !important;');
 		} else {
-			$('.navbar').removeAttr('style');
-			correctNavbar();
+			if (toggleAble) {
+				$('.navbar').removeAttr('style');
+				correctNavbar();
+			}
 		}
 	}
 

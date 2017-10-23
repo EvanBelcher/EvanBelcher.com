@@ -158,6 +158,10 @@ footer li a:hover{
 	font-size: 0.97em;
 }
 
+.nav-link{
+	border: 1px solid transparent;
+}
+
 .nav-link.active{
 	background: #323232;
 	border: 1px solid #999999;
