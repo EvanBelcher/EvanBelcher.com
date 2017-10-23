@@ -1,35 +1,4 @@
-#header{
-	position: relative;
-	top: -65px;
-	height: 100vh;
-}
-
-#header-center{
-	height: 95%;
-	padding-top: 40vh;
-}
-
-#header{
-	background: #27252c;
-	background: url(../img/stressed_linen.png);
-}
-
-#header{
-	background: #27252c;
-	background-image: url(../img/header-bg.png);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
-}
-
-#header-center h1{
-	color: white;
-}
-
-#header-center h4{
-	color: white;
-}
-
+/* Section */
 section:not(.bg-img){
 	margin-top: -40px;
 	padding-top: 80px;
@@ -40,11 +9,7 @@ section:not(#resume):not(#contact){
 	min-height: 100vh;
 }
 
-body{
-	position: relative;
-	padding-top: 65px;
-}
-
+/* Card */
 .card{
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -59,6 +24,7 @@ body{
 	max-height: 30%;
 }
 
+/* Carousel */
 .carousel-control-prev span, .carousel-control-next span{
 	background: #27252c;
 	padding: 20px;
@@ -83,6 +49,7 @@ body{
 	margin: auto;
 }
 
+/* Footer */
 ul.social-buttons li a{
 	display: block;
 	width: 50px;
@@ -93,6 +60,19 @@ ul.social-buttons li a{
 	color: rgba(255, 255, 255, 0.8);
 }
 
+footer{
+	background: #27252c;
+	background: url(../img/stressed_linen.png);
+	color: white;
+}
+
+footer li a:hover{
+	background: #323232;
+	border: 1px solid #999999;
+	border-radius: 5px;
+}
+
+/* Background pictures */
 .img-overlay{
 	width: 100%;
 	height: 100%;
@@ -106,16 +86,41 @@ ul.social-buttons li a{
 	background-attachment: fixed;
 }
 
-/* h2{
-	font-family: "Segoe UI" !important;
-	font-weight: 300;
-} */
+#bg-devfest{
+	height: 500px;
+	background: #27252c;
+	background: url('../img/devfestdc_winners_crop_logo-bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 25% 50%;
+}
 
-/* *{
-	font-family: "Segoe UI" !important;
-	font-weight: 300 !important;
-} */
+#resume{
+	height: 300px;
+	background: #27252c;
+	background: url('../img/stressed_linen.png');
+	padding-top: 40px;
+}
 
+#bg-coding{
+	height: 500px;
+	background: #27252c;
+	background: url('../img/coding-bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 60% 0%;
+}
+
+#bg-activities{
+	height: 500px;
+	background: #27252c;
+	background: url('../img/msn-bg.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 85% 60%;
+}
+
+/* Navbar */
 .navbar{
 	background: #27252c;
 	background: rgba(0,0,0,0.3);
@@ -130,19 +135,17 @@ ul.social-buttons li a{
 	border-radius: 5px;
 }
 
-a.btn{
-	cursor: default;
-}
-
-html, body{
-	overflow-x: hidden;
-}
-
 .fixed-top{
 	right: initial;
 	width: 100vw;
 }
 
+/* Link as button */
+a.btn{
+	cursor: default;
+}
+
+/* Media queries */
 @media screen and (max-width: 768px) {
 	.carousel-inner{
 		height: 400px;
@@ -157,6 +160,13 @@ html, body{
 	}
 }
 
+@media screen and (max-width: 437px) {
+	#header-center{
+		padding-top: 20vh;
+	}
+}
+
+/* Colors */
 .bg-light{
 	background: #fefffa !important;
 	color: #212529;
@@ -205,16 +215,12 @@ a:hover{
 	background-color: #de7548;
 }
 
-footer{
-	background: #27252c;
-	background: url(../img/stressed_linen.png);
-	color: white;
-}
-
+/* Quick fix */
 #contact, #workExperience{
 	margin-top: -1px;
 }
 
+/* Nav arrows */
 #downarrow{
 	position: absolute;
 	top: 80vh;
@@ -236,6 +242,7 @@ footer{
 	font-size: 3.2em;
 }
 
+/* Animations */
 .js.cssanimations section .container{
 	opacity: 0;
 }
@@ -244,22 +251,9 @@ footer{
 	opacity: 0;
 }
 
-footer li a:hover{
-	background: #323232;
-	border: 1px solid #999999;
-	border-radius: 5px;
-}
-
-@media screen and (max-width: 437px) {
-	#header-center{
-		padding-top: 20vh;
-	}
-}
-
+/* Fonts */
 h1, h2, h3, h4{
 	font-family: 'Contrail One', sans-serif;
-	/* font-size: 3em; */
-	/* font-weight: 800; */
 }
 
 h1{
