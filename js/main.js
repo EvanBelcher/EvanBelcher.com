@@ -58,9 +58,13 @@ $(function () {
 	function correctNavbar() {
 		if ($(window).scrollTop() + navbarHeight > topofTitle) {
 			$(".navbar").css('background', 'url(../img/stressed_linen.png)');
+			$('#page-title').css('opacity', 1);
+			$('#page-title').addClass('animated fadeIn');
 		}
 		else {
 			$(".navbar").css('background', 'rgba(0,0,0,0.3)');
+			$('#page-title').css('opacity', 0);
+			$('#page-title').removeClass('animated fadeIn');
 		}
 
 		let arrowOpacity = 1 - ($(window).scrollTop() / topofArrow);
