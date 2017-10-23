@@ -1,3 +1,22 @@
+/* Header */
+#header{
+	position: relative;
+	top: -65px;
+	height: 100vh;
+	background: #27252c;
+	background: url(../img/stressed_linen.png);
+		background-image: url(../img/header-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	color: white;
+}
+
+#header-center{
+	height: 95%;
+	padding-top: 40vh;
+}
+
 /* Section */
 section:not(.bg-img){
 	margin-top: -40px;
@@ -64,6 +83,10 @@ footer{
 	background: #27252c;
 	background: url(../img/stressed_linen.png);
 	color: white;
+}
+
+footer li a{
+	border: 1px solid transparent;
 }
 
 footer li a:hover{
@@ -272,4 +295,9 @@ h4 small{
 
 button{
 	font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* Stupid fixes */
+html, body{
+	overflow-x: hidden;
 }
