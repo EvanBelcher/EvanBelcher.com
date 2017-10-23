@@ -158,6 +158,10 @@ footer li a:hover{
 	font-size: 0.97em;
 }
 
+.no-js .navbar{
+	background: url(../img/stressed_linen.png);
+}
+
 .nav-link{
 	border: 1px solid transparent;
 }
