@@ -74,6 +74,7 @@ $(function () {
 		$('#header-center').css('opacity', headerOpacity);
 	}
 
+	//Toggler background and close on click
 	var toggler = false;
 
 	$('.navbar-toggler').click(function () {
@@ -96,9 +97,12 @@ $(function () {
 		}
 	});
 
+	//Animations
+
 	$('#header-center').addClass('animated fadeIn');
 	$('#downarrow').addClass('animated fadeIn');
 
+	//Apply animation for section content
 	$('section .container').waypoint(function (direction) {
 		$(`#${this.element.parentNode.id} .container`).css('opacity', 1);
 		$(`#${this.element.parentNode.id} .container`).addClass('animated zoomIn');
@@ -106,12 +110,14 @@ $(function () {
 			offset: '95%'
 		});
 
+	//Apply animation for resume download button
 	$('#resumebutton').waypoint(function (direction) {
 		$('#resumebutton').addClass('animated infinite pulse');
 	}, {
 			offset: '75%'
 		});
 
+	//Apply animation for cards
 	$('.card').waypoint(function (direction) {
 		$(`#${this.element.id}`).css('opacity', 1);
 		$(`#${this.element.id}`).addClass('animated fadeInLeft');
@@ -120,6 +126,7 @@ $(function () {
 		});
 });
 
+// Apply scroll animation for all local links
 $('a[href^="#"]').bind('click', function () {
 	let anchor = $(this);
 	if (anchor.attr('href') != '#projectsCarousel') {

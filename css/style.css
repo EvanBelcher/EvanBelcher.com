@@ -8,8 +8,8 @@ html, body{
 	position: relative;
 	top: -65px;
 	height: 100vh;
-	background: #27252c url(../img/header-bg.png) center center/cover;
-	background: #27252c url(../img/header-bg.png) center center/cover fixed;
+	background: #27252c url(../img/header-bg.png) center center/cover no-repeat;
+	background: #27252c url(../img/header-bg.png) center center/cover fixed no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -115,8 +115,8 @@ footer li a:hover{
 
 #bg-devfest{
 	height: 500px;
-	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover;
-	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover fixed;
+	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover no-repeat;
+	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover fixed no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -131,8 +131,8 @@ footer li a:hover{
 
 #bg-coding{
 	height: 500px;
-	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover;
-	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover fixed;
+	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover no-repeat;
+	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover fixed no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -141,8 +141,8 @@ footer li a:hover{
 
 #bg-activities{
 	height: 500px;
-	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover;
-	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover fixed;
+	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover no-repeat;
+	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover fixed no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -194,6 +194,12 @@ a.btn{
 		padding-top: 20vh;
 	}
 }
+
+/* @media screen and (max-width: 991px){
+	#bg-devfest, #bg-coding, #bg-activities{
+		display: none;
+	}
+} */
 
 /* Colors */
 .bg-light{
@@ -301,4 +307,9 @@ h4 small{
 
 button{
 	font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.no-backgroundsize #bg-devfest, .no-backgroundsize #bg-coding, .no-backgroundsize #bg-activities{
+	background: #27252c url('../img/stressed_linen.png');
+	display: none;
 }
