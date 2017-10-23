@@ -10,6 +10,10 @@ html, body{
 	height: 100vh;
 	background: #27252c url(../img/header-bg.png) center center/cover;
 	background: #27252c url(../img/header-bg.png) center center/cover fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: white;
 }
 
@@ -113,6 +117,10 @@ footer li a:hover{
 	height: 500px;
 	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover;
 	background: #27252c url(../img/devfestdc_winners_crop_logo-bg.jpg) 25% 50%/cover fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #resume{
@@ -125,12 +133,20 @@ footer li a:hover{
 	height: 500px;
 	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover;
 	background: #27252c url('../img/coding-bg.jpg') 60% 0%/cover fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #bg-activities{
 	height: 500px;
 	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover;
 	background: #27252c url('../img/msn-bg.jpg') 85% 60%/cover fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /* Navbar */
