@@ -14,10 +14,10 @@ function showProjectModal(title) {
 		let html = $('.active .carousel-caption').html();
 		let title = html.split('</h3>')[0].split('<h3>')[1];
 	}
-	title = title.replace(/\s+/g, '');
-	$('#projectsModalTitle').html(title);
+	title = title.replace(/\s+/g, '').toLowerCase();
 	if (projects && projects[title]) {
 		let project = projects[title];
+		$('#projectsModalTitle').html(project['title']);
 		let html = project['html'];
 		$('#projectsModalLabel').html(html);
 		if (project['live'] && project['code']) {
@@ -58,7 +58,7 @@ $(function () {
 			$('html, body').animate({
 				scrollTop: $("#projects").offset().top
 			}, 100);
-			$('#projectsCarousel').carousel(projects[modalString]['index']);
+			$('#projectsCarousel').carousel(projects[modalString.toLowerCase()]['index']);
 			showProjectModal(modalString);
 		} else
 			$(modalToShow).modal('show');
