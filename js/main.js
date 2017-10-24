@@ -6,8 +6,15 @@ $.getJSON('../docs/projects.json', function (data) {
 });
 
 $('.carousel-item').click(function () {
-	let html = $('.active .carousel-caption').html();
-	let title = html.split('</h3>')[0].split('<h3>')[1];
+	showProjectModal();
+});
+
+function showProjectModal(title) {
+	if (!title) {
+		let html = $('.active .carousel-caption').html();
+		let title = html.split('</h3>')[0].split('<h3>')[1];
+	}
+	title = title.replace(/\s+/g, '');
 	$('#projectsModalTitle').html(title);
 	if (projects && projects[title]) {
 		let project = projects[title];
@@ -26,9 +33,36 @@ $('.carousel-item').click(function () {
 		}
 	}
 	$('#projectsModal').modal();
-});
+}
 
 $(function () {
+
+	// Deeplink to modals
+	// https://gist.github.com/tomhodgins/10414454
+
+	// queryStrip
+	function queryStrip(string) {
+		string = string.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+		var regex = new RegExp('[\\?&]' + string + '=([^&#]*)'),
+			results = regex.exec(location.search);
+		return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ''));
+	}
+
+	// Show bootstrap modal on load
+	// If the modal id="terms", you can show it on page load by appending `?modal=terms` to the URL
+	var modalString = queryStrip('modal'),
+		modalToShow = '#' + modalString;
+	if (modalString !== '') {
+		if (modalString.startsWith('projectsModal')) {
+			modalString = modalString.substr(13);
+			$('html, body').animate({
+				scrollTop: $("#projects").offset().top
+			}, 100);
+			$('#projectsCarousel').carousel(projects[modalString]['index']);
+			showProjectModal(modalString);
+		} else
+			$(modalToShow).modal('show');
+	}
 
 	$('body').removeClass('no-js');
 

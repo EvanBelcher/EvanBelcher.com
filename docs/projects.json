@@ -2,36 +2,45 @@
 	"DrillBook":{
 		"html": "<p>DrillBook is a marching band drill creation software. It is designed to help drill writers and band directors create, edit, and print drill pages with ease and control.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Java</li> <li class=\"list-inline-item\">&#9679; Maven</li> <li class=\"list-inline-item\">&#9679; Ant</li> </ul>",
 		"code": "https://github.com/EvanBelcher/DrillBook",
-		"live": "https://github.com/EvanBelcher/DrillBook/releases"
+		"live": "https://github.com/EvanBelcher/DrillBook/releases",
+		"index": 0
 	},
 	"MasonSomeNoise.com":{
 		"html":"<p>Website for George Mason University a cappella group Mason Some Noise.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; Firebase</li> </ul>",
-		"live": "https://masonsomenoise.com/"
+		"live": "https://masonsomenoise.com/",
+		"index": 1
 	},
 	"EvanBelcher.com":{
 		"html":"<p>The website you are currently on.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Bootstrap</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> </ul>",
 		"live":"http://EvanBelcher.com",
-		"code": "https://github.com/EvanBelcher/EvanBelcher.com"
+		"code": "https://github.com/EvanBelcher/EvanBelcher.com",
+		"index": 2
 	},
 	"SocialSave":{
 		"html":"<p>Created during the hackathon at the Capital One Software Engineering Summit, SocialSave is a prototype Android App that is designed to revolutionize the way people save money.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Java</li> <li class=\"list-inline-item\">&#9679; Firebase</li> <li class=\"list-inline-item\">&#9679; Python</li> </ul>",
-		"code":"https://github.com/YesAndApps/SocialSave"
+		"code":"https://github.com/YesAndApps/SocialSave",
+		"index": 3
 	},
-	"Pitch, Please":{
+	"Pitch,Please":{
 		"html":"<p>Created as a group project for \"Preview of Computer Science\", Pitch, Please is an Android App designed to facilitate the self-improvement of musicians. The app has a pitch generation mode, a pitch guessing mode, an interval guessing mode, and a composer guessing mode.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Java</li> <li class=\"list-inline-item\">&#9679; Android</li> <li class=\"list-inline-item\">&#9679; Spotify API</li> </ul>",
-		"code":"https://github.com/HrdyAndrew/PitchPlease"
+		"code":"https://github.com/HrdyAndrew/PitchPlease",
+		"index": 4
 	},
 	"TextToText":{
 		"html":"<p>TextToText is a console application that turns SMS or Google Hangouts message logs into arbitrary-length \"Screenshots\"</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Java</li> </ul>",
-		"code":"https://github.com/EvanBelcher/TextToText"
+		"code":"https://github.com/EvanBelcher/TextToText",
+		"index": 5
 	},
-	"DrillBook Electron":{
-		"html":"<p>Revamping DrillBook to be built in Electron for a cleaner UI and distribution process.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Electron</li> <li class=\"list-inline-item\">&#9679; NodeJS</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; TypeScript</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> </ul>"
+	"DrillBookElectron":{
+		"html":"<p>Revamping DrillBook to be built in Electron for a cleaner UI and distribution process.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Electron</li> <li class=\"list-inline-item\">&#9679; NodeJS</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; TypeScript</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> </ul>",
+		"index": 6
 	},
 	"Billiard":{
-		"html":"<p>Billiard uses geographical information to help you make the most efficient carpooling routes.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Bootstrap</li> <li class=\"list-inline-item\">&#9679; Google Maps API</li> <li class=\"list-inline-item\">&#9679; Amazon DynamoDB</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; TypeScript</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> </ul>"
+		"html":"<p>Billiard uses geographical information to help you make the most efficient carpooling routes.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Bootstrap</li> <li class=\"list-inline-item\">&#9679; Google Maps API</li> <li class=\"list-inline-item\">&#9679; Amazon DynamoDB</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; TypeScript</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> </ul>",
+		"index": 7
 	},
 	"Chord":{
-		"html":"<p>This Firebase-integrated web application for musicians makes it easy to record your practice and leave feedback at a particular timestamp in the audio. This application won first place in the DevFest DC Fall 2017 Hackathon.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Bootstrap</li> <li class=\"list-inline-item\">&#9679; Firebase</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> </ul>"
+		"html":"<p>This Firebase-integrated web application for musicians makes it easy to record your practice and leave feedback at a particular timestamp in the audio. This application won first place in the DevFest DC Fall 2017 Hackathon.</p> <ul class=\"list-inline\"> <li class=\"list-inline-item\">Bootstrap</li> <li class=\"list-inline-item\">&#9679; Firebase</li> <li class=\"list-inline-item\">&#9679; JavaScript</li> <li class=\"list-inline-item\">&#9679; HTML5</li> <li class=\"list-inline-item\">&#9679; CSS3</li> </ul>",
+		"index": 8
 	}
 }
