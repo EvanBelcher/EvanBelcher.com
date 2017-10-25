@@ -203,11 +203,16 @@ a.btn{
 	}
 }
 
-/* @media screen and (max-width: 991px){
+@media screen and (max-width: 991px){
 	#bg-devfest, #bg-coding, #bg-activities{
-		display: none;
+		background-size: auto 100%;
 	}
-} */
+
+	#header{
+		background: #27252c url(../img/header-bg.png) center center fixed no-repeat;
+		background-size: auto 100%;
+	}
+}
 
 /* Colors */
 .bg-light{
