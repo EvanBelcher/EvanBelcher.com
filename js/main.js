@@ -12,7 +12,7 @@ $('.carousel-item').click(function () {
 function showProjectModal(title) {
 	if (!title) {
 		let html = $('.active .carousel-caption').html();
-		let title = html.split('</h3>')[0].split('<h3>')[1];
+		var title = html.split('</h3>')[0].split('<h3>')[1];
 	}
 	title = title.replace(/\s+/g, '').toLowerCase();
 	if (projects && projects[title]) {
